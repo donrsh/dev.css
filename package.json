@@ -1,0 +1,23 @@
+{
+  "name": "dev.css",
+  "version": "0.0.1",
+  "description": "A Set of css rules for front-end development use",
+  "main": "build/index.css",
+  "author": "donrsh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donrsh/dev.css.git"
+  },
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2"
+  }
+}

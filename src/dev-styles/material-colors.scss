@@ -1,0 +1,5 @@
+$materialColors: ( red: #F44336, pink: #E91E63, purple: #9C27B0, deep-purple: #673AB7, indigo: #3F51B5, blue: #2196F3, light-blue: #03A9F4, cyan: #00BCD4, teal: #009688, green: #4CAF50, light-green: #8BC34A, lime: #CDDC39, yellow: #FFEB3B, amber: #FFC107, orange: #FF9800, deep-orange: #FF5722, brown: #795548, grey: #9E9E9E, blue-grey: #607D8B);
+
+@debug map-get($materialColors, red);
+
+$railbowColors: ( 1: map-get($materialColors, red), 2: map-get($materialColors, orange), 3: map-get($materialColors, yellow), 4: map-get($materialColors, green), 5: map-get($materialColors, blue), 6: map-get($materialColors, indigo), 7: map-get($materialColors, purple));

@@ -1,0 +1,23 @@
+@import './material-colors';
+
+@function getBorderBoxBackgroud ($colorCode) {
+    @return linear-gradient(to right bottom, #{rgba($colorCode, 0.05)}, #{rgba($colorCode, 0.1)}) border-box
+}
+
+@function getContentBoxBackgroud ($colorCode) {
+    @return linear-gradient(to left top, #{rgba($colorCode, 0.05)}, #{rgba($colorCode, 0.05)}) content-box;
+}
+
+@mixin getRule ($colorName, $colorCode) {
+    *[data-dev='#{$colorName}'] {
+        background: getBorderBoxBackgroud($colorCode), getContentBoxBackgroud($colorCode);
+    }
+}
+
+@each $colorName, $colorCode in $materialColors {
+    @include getRule($colorName, $colorCode)
+}
+
+@each $rainbowIdx, $colorCode in $railbowColors {
+    @include getRule($rainbowIdx, $colorCode)
+}
