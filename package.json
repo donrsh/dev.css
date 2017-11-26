@@ -11,13 +11,15 @@
   },
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp build"
+    "build": "gulp build",
+    "precommit": "yarn run build && git add build"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0",
-    "gulp-server-livereload": "^1.9.2"
+    "gulp-server-livereload": "^1.9.2",
+    "husky": "^0.14.3"
   }
 }
